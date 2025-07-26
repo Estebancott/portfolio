@@ -19,7 +19,7 @@ const HeroBanner = () => {
                 </div>
             </div>
             <div className={styles.banner}>
-                <img src={"/esteban-portfolio/hero_banner.png"} alt="HeroBanner"/>
+                <img src={"/portfolio/hero_banner.png"} alt="HeroBanner"/>
             </div>
         </div>
     )

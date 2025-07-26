@@ -50,7 +50,7 @@ const Header = () => {
             <div className={styles.content}>
                 <nav>
                     <ul className={styles.menu} ref={menuRef}>
-                        <li><a href="/esteban-portfolio/CV.pdf" target="_blank" rel="noopener noreferrer" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>About Me</a></li>
+                        <li><a href="/portfolio/CV.pdf" target="_blank" rel="noopener noreferrer" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>About Me</a></li>
                         <li><a href="#" onClick={handleProjectsClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Projects</a></li>
                         <div className={styles.border} ref={borderRef}></div>
                     </ul>

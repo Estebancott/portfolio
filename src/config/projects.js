@@ -2,12 +2,13 @@ import {marked} from 'marked';
 
 const PROJECTS_LIST = [
     'UsineDuFutur',
-    'FormulePolytechniqueMontreal',
-    'Portfolio'
+    'EnsimElec',
+    'Portfolio',
+    'FormulePolytechniqueMontreal'
 ];
 
 const fixImagePaths = (content, projectId) => {
-    return content.replace(/\.\/([^)\s]+\.(jpg|jpeg|png|gif|svg))/g, `/esteban-portfolio/projects/${projectId}/$1`);
+    return content.replace(/\.\/([^)\s]+\.(jpg|jpeg|png|gif|svg))/g, `/portfolio/projects/${projectId}/$1`);
 };
 
 export const getProjectsConfig = async () => {
@@ -16,7 +17,7 @@ export const getProjectsConfig = async () => {
 
         for (const projectId of PROJECTS_LIST) {
             try {
-                const response = await fetch(`/esteban-portfolio/projects/${projectId}/project.json`);
+                const response = await fetch(`/portfolio/projects/${projectId}/project.json`);
                 if (!response.ok) {
                     console.warn(`Projet ${projectId} non trouvé, ignoré`);
                     continue;
@@ -28,7 +29,7 @@ export const getProjectsConfig = async () => {
                     id: projectData.id,
                     title: projectData.title || 'Projet sans titre',
                     date: projectData.date || '',
-                    cover: projectData.cover ? projectData.cover.replace('./', `/esteban-portfolio/projects/${projectId}/`) : '',
+                    cover: projectData.cover ? projectData.cover.replace('./', `/portfolio/projects/${projectId}/`) : '',
                     tags: projectData.tags || []
                 };
 
@@ -47,7 +48,7 @@ export const getProjectsConfig = async () => {
 
 export const loadProjectContent = async (projectId) => {
     try {
-        const response = await fetch(`/esteban-portfolio/projects/${projectId}/project.json`);
+        const response = await fetch(`/portfolio/projects/${projectId}/project.json`);
         if (!response.ok) {
             throw new Error(`Erreur HTTP: ${response.status}`);
         }
