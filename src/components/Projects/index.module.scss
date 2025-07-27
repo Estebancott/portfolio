@@ -315,6 +315,15 @@
     margin: 1rem 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
+  
+  img[src$="#icon"] {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.4em; // La hauteur est relative à la taille du texte
+    width: auto;   // La largeur s'ajuste automatiquement
+    margin: 0 0.2em 0.1em 0; // Ajuste l'espacement autour de l'icône
+    box-shadow: none; // On retire l'ombre portée pour les petites icônes
+  }
 
   a {
     color: vars.$primaryColor;
