@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://estebancott.github.io/portfolio/",
+  "homepage": "https://estebancott.dev/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
