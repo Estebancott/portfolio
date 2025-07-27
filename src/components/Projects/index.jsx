@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 import { useState, useEffect } from "react";
-import { getProjectsConfig, loadProjectContent } from "../../config/projects";
+import { getProjects } from "../../config/projects";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -13,20 +13,8 @@ const Projects = () => {
         const loadProjects = async () => {
             try {
                 setLoading(true);
-                
-                const projectsConfig = await getProjectsConfig();
-                
-                const projectsWithContent = await Promise.all(
-                    projectsConfig.map(async (project) => {
-                        const content = await loadProjectContent(project.id);
-                        return {
-                            ...project,
-                            content
-                        };
-                    })
-                );
-                
-                setProjects(projectsWithContent);
+                const projectsData = await getProjects();
+                setProjects(projectsData);
             } catch (error) {
                 console.error('Erreur lors du chargement des projets:', error);
             } finally {

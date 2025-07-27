@@ -1,7 +1,7 @@
 ---
 title: "Portfolio"
 date: "2025-07-26"
-cover: "/projects/Portfolio/figma.png"
+cover: "/public/projects/Portfolio/figma.png"
 tags: [React, JavaScript, CSS, Web Design]
 ---
 
@@ -29,4 +29,4 @@ Le projet correspond à ce que j'attendais pour me présenter moi et mon portfol
 
 ## 📷 Captures d'écran
 
-![Capture du projet](/projects/Portfolio/figma.png) 
+![Capture du projet](/public/projects/Portfolio/figma.png) 
