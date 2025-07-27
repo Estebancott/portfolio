@@ -1,8 +1,8 @@
 ---
 title: "Usine du futur"
 date: "2025-07-26"
-cover: "/projects/UsineDuFutur/cover_test.png"
-tags: [CAO, FAO, Solidworks, Smartbench, Production série, Usinage]
+cover: "/public/projects/UsineDuFutur/cover_test.png"
+tags: ["CAO", "FAO", "Solidworks", "Smartbench", "Production série", "Usinage"]
 ---
 
 ## Contexte du projet
@@ -61,6 +61,4 @@ Malgré cela, j'ai beaucoup apprécié l'expérience, notamment l'aspect **brico
 
 ## 📷 Illustrations
 
-![Gif de l'enceinte](/projects/UsineDuFutur/usine.gif "Gif de l'enceinte")
-
----
+![Gif de l'enceinte](/public/projects/UsineDuFutur/usine.gif "Gif de l'enceinte")
