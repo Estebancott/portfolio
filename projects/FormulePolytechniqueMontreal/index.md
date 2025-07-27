@@ -1,7 +1,7 @@
 ---
 title: "Formule Polytechnique Montréal"
 date: "2025-06-01"
-cover: "/portfolio/projects/FormulePolytechniqueMontreal/logo.png"  # à adapter selon le chemin de l'image
+cover: "/projects/FormulePolytechniqueMontreal/logo.png"  # à adapter selon le chemin de l'image
 tags: [STM32, Télémetrie, Xbee, CAN, Firmware, Équipe, Projet étudiant]
 ---
 
