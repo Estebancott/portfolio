@@ -1,7 +1,7 @@
 ---
 title: "Restauration d’une caravane avec système audio Bluetooth"
 date: "2023-07-01"
-cover: "/public/projects/RestaurationCaravane/caravane.jpeg"
+cover: "/projects/RestaurationCaravane/caravane.jpeg"
 tags: [DIY, Système audio, Bluetooth, Restauration, 12V, Électronique, Bricolage]
 ---
 

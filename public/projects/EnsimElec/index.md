@@ -1,7 +1,7 @@
 ---
 title: "ENSIM'elec – Eurobot 2024"
 date: "2024-08-01"
-cover: "/public/projects/EnsimElec/logo.png"
+cover: "/projects/EnsimElec/logo.png"
 tags: [Robotique, STM32, Leadership, Asservissement, C embarqué, Projet étudiant, Eurobot]
 ---
 
