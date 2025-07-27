@@ -1,6 +1,6 @@
 {
   "id": "FormulePolytechniqueMontreal",
-  "title": "Formule Polytechnique Montréal",
+  "title": "Please Formule Polytechnique Montréal",
   "date": "2025-06-01",
   "cover": "./logo.png",
   "tags": ["STM32", "Télémetrie", "Xbee", "CAN", "Firmware", "Équipe", "Projet étudiant"],
