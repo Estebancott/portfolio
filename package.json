@@ -5,10 +5,11 @@
   "type": "module",
   "homepage": "https://estebancott.dev/",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run generate-projects && vite",
+    "build": "npm run generate-projects && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "generate-projects": "node generate-projects-list.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

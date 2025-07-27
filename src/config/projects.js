@@ -1,15 +1,6 @@
 import { marked } from 'marked';
 import matter from 'gray-matter';
-
-// Cette liste peut maintenant être gérée manuellement ici,
-// ou automatisée plus tard si vous le souhaitez.
-const PROJECTS_LIST = [
-    'UsineDuFutur',
-    'EnsimElec',
-    'Portfolio',
-    'FormulePolytechniqueMontreal',
-    'RestaurationCaravane'
-];
+import { PROJECTS_LIST } from './projectsConfig.js';
 
 /**
  * Charge et parse la configuration de tous les projets depuis leurs fichiers index.md.
