@@ -4,7 +4,8 @@ const PROJECTS_LIST = [
     'UsineDuFutur',
     'EnsimElec',
     'Portfolio',
-    'FormulePolytechniqueMontreal'
+    'FormulePolytechniqueMontreal',
+    'RestaurationCaravane'
 ];
 
 const fixImagePaths = (content, projectId) => {
