@@ -1,8 +1,8 @@
 ---
 title: "Battlécobot – L'art de la récup' et de la mécatronique"
-date: "2024-05-20"
-cover: "/projects/BattlecoBot/solidworks-model-full.jpg"
-tags: ["Mécatronique", "SolidWorks", "KiCad", "Upcycling", "Arduino", "Autonome", "Robotique"]
+date: "2023-06-10"
+cover: "/projects/BattlecoBot/solidworks-model-full.png"
+tags: ["Mécatronique", "SolidWorks", "KiCad", "Upcycling", "Arduino", "Robotique"]
 ---
 
 ## L'idée de départ : un robot de combat éco-responsable
