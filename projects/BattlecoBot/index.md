@@ -1,6 +1,6 @@
 ---
 title: "Battlécobot – L'art de la récup' et de la mécatronique"
-date: "2023-06-10"
+date: "2023-05-17"
 cover: "/projects/BattlecoBot/solidworks-model-full.png"
 tags: ["Mécatronique", "SolidWorks", "KiCad", "Upcycling", "Arduino", "Robotique"]
 ---
