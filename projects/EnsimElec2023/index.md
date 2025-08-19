@@ -29,6 +29,8 @@ Le premier prototype était fonctionnel, mais un problème est vite apparu : **l
 
 ![Panier final avec les évidements](/projects/EnsimElec2023/panier-final.png "Le panier assemblé. On peut voir les découpes sur les côtés, ajoutées pour respecter la contrainte de poids.")
 
+Comme on peut le voir sur l'illustration ci-dessus. Le panier est déguisé en crocodile car c'est la mascotte de l'association, qui s'appelle Murphy.
+
 ### Le petit plus : un compteur de points intelligent
 
 Pour aller plus loin, Nous avons décidé de rendre notre panier "intelligent" en y intégrant un **compteur de cerises automatique**.
@@ -50,7 +52,7 @@ Ce fut une plongée intense dans la gestion de projet événementiel :
 -   **Les démarches officielles** : J'ai dû faire le lien avec les organisateurs nationaux d'Eurobot pour que notre événement soit "agréé", mais aussi avec l'administration de l'ENSIM pour obtenir les autorisations nécessaires, notamment pour ouvrir l'événement au public le samedi.
 -   **La communication** : Pour attirer un maximum de monde, j'ai participé à la création et à la diffusion d'une affiche promotionnelle que nous avons placardée partout dans l'école et partagée en ligne.
 
-![Affiche de la pré-coupe organisée à l'ENSIM](/projects/EnsimElec2023/pre-coupe-affiche.png "L'affiche de l'événement, un gros travail de communication !")
+![Affiche de la pré-coupe organisée à l'ENSIM](/projects/EnsimElec2023/affiche-précoupe.png "L'affiche de l'événement, un gros travail de communication !")
 
 ---
 
