@@ -27,7 +27,7 @@ Nous avons commencé par modéliser le panier sur **SolidWorks**, en pensant cha
 
 Le premier prototype était fonctionnel, mais un problème est vite apparu : **le poids**. On dépassait la limite autorisée par le règlement ! On a donc dû retourner sur la conception pour **réaliser des évidements** sur les faces latérales. C'était un excellent exercice d'optimisation : alléger la structure au maximum sans compromettre sa solidité.
 
-![Panier final avec les évidements](/projects/EnsimElec2023/panier-final.jpg "Le panier assemblé. On peut voir les découpes sur les côtés, ajoutées pour respecter la contrainte de poids.")
+![Panier final avec les évidements](/projects/EnsimElec2023/panier-final.png "Le panier assemblé. On peut voir les découpes sur les côtés, ajoutées pour respecter la contrainte de poids.")
 
 ### Le petit plus : un compteur de points intelligent
 
@@ -50,7 +50,7 @@ Ce fut une plongée intense dans la gestion de projet événementiel :
 -   **Les démarches officielles** : J'ai dû faire le lien avec les organisateurs nationaux d'Eurobot pour que notre événement soit "agréé", mais aussi avec l'administration de l'ENSIM pour obtenir les autorisations nécessaires, notamment pour ouvrir l'événement au public le samedi.
 -   **La communication** : Pour attirer un maximum de monde, j'ai participé à la création et à la diffusion d'une affiche promotionnelle que nous avons placardée partout dans l'école et partagée en ligne.
 
-![Affiche de la pré-coupe organisée à l'ENSIM](/projects/EnsimElec2023/pre-coupe-affiche.jpg "L'affiche de l'événement, un gros travail de communication !")
+![Affiche de la pré-coupe organisée à l'ENSIM](/projects/EnsimElec2023/pre-coupe-affiche.png "L'affiche de l'événement, un gros travail de communication !")
 
 ---
 
