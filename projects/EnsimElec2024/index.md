@@ -11,7 +11,7 @@ Après une première année de découverte chez **ENSIM'elec**, j'ai décidé de
 
 Cette année, le thème était **"Farming Mars"** : nos robots devaient coloniser Mars en cultivant des plantes et en déployant des panneaux solaires. Un défi passionnant qui allait nous demander de l'ingéniosité tant sur le plan mécanique qu'électronique et logiciel.
 
-![Table de jeu Eurobot 2024](/projects/EnsimElec2024/tableDeJeu.jpg "Le terrain de jeu martien de la compétition Eurobot 2024.")
+![Table de jeu Eurobot 2024](/projects/EnsimElec2024/tableDeJeu.png "Le terrain de jeu martien de la compétition Eurobot 2024.")
 
 ---
 
@@ -39,7 +39,7 @@ J'ai aussi géré tout l'aspect "invisible" mais essentiel du projet :
 
 Notre stratégie, affinée au fil des mois, consistait à prioriser les tâches les plus rentables en points, comme on peut le voir sur cette simulation de notre parcours idéal.
 
-![Stratégie du robot en action](/projects/EnsimElec2024/stratégieFinale.gif "Simulation de la stratégie de jeu pour marquer un maximum de points.")
+![Stratégie du robot en action](/projects/EnsimElec2024/stratégieFinale.gif "Simulation de la stratégie de jeu pour marquer un maximum de points.")
 
 ### Le Cerveau : un Duo STM32 et Raspberry Pi
 
