@@ -1,7 +1,7 @@
 ---
 title: "Président d'ENSIM'elec – Leader d'un projet pour Eurobot 2024"
 date: "2024-06-01"
-cover: "/projects/EnsimElec2024/logoEnsimElec.png"
+cover: "/projects/EnsimElec2024/stratégieFinale.gif"
 tags: ["Leadership", "Gestion de Projet", "Robotique", "STM32", "C++", "Python", "Raspberry Pi"]
 ---
 

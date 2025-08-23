@@ -1,6 +1,6 @@
 ---
 title: "Ambilight DIY pour un Setup Gaming Immersif"
-date: "2024-06-06"
+date: "2025-06-06"
 cover: "/projects/Ambilight/ambilight-final.gif"
 tags: ["DIY", "Électronique", "Wemos D1", "WLED", "Hyperion"]
 ---
@@ -28,7 +28,7 @@ J'ai conçu et fabriqué une petite carte électronique qui sert de hub central.
 
 L'avantage, c'est que tout est branché avec des connecteurs. Si on a besoin de débrancher l'écran ou de faire une modification, tout se démonte facilement sans avoir à couper ou ressouder quoi que ce soit.
 
-![Photo de la carte électronique custom](/projects/Ambilight/carte-electronique-ambilight.jpg "La carte de connexion que j'ai conçue et soudée.")
+![Photo de la carte électronique custom](/projects/Ambilight/carte-electronique-ambilight.jpeg "La carte de connexion que j'ai conçue et soudée.")
 
 ### L'astuce : une alimentation directe depuis le PC
 
