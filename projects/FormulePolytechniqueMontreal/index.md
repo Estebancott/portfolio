@@ -1,7 +1,7 @@
 ---
 title: "Formule Polytechnique Montréal"
 date: "2024-12-15"
-cover: "/projects/FormulePolytechniqueMontreal/logo.png"
+cover: "/projects/FormulePolytechniqueMontreal/formule.gif"
 tags: ["STM32", "Embarqué", "CAN", "Python", "Xbee", "Télémétrie"]
 ---
 
@@ -66,3 +66,5 @@ Après ces modifications, les tests ont été sans appel : sur un essai de 20 mi
 Cette expérience dans l'association Formule Polytechnique Montréal a été incroyable. Travailler dans une équipe aussi grande et structurée (près de 50 personnes !) a été hyper enrichissant, surtout en comparaison avec mon expérience à ENSIM'elec où nous étions 9. La communication et la coordination entre les différents pôles (mécanique, électronique, logiciel) sont essentielles, et j'ai adoré cet environnement où chaque ligne de code a un impact direct sur la performance.
 
 Même si je n'ai pas pu aller jusqu'à la compétition au Michigan, je suis très fier de tout ce que j'ai pu accomplir et apporter à l'équipe en seulement 4 mois, tout en suivant mes cours à côté.
+
+![gif de la formule 2025](/projects/FormulePolytechniqueMontreal/formule.gif "gif de la formule 2025")
