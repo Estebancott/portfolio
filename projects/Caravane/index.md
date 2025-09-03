@@ -1,8 +1,8 @@
 ---
 title: "Rénovation et modernisation d’une caravane"
-date: 2025-07-03
+date: "2025-07-03"
 cover: "/projects/Caravane/caravane.jpeg"
-tags: ["DIY", "électricité", "audio", "bricolage"]
+tags: ["DIY", "Électricité", "Audio", "Bricolage"]
 ---
 
 # Rénovation et modernisation d’une caravane
@@ -40,10 +40,10 @@ Celui-ci permettait d’alimenter l’éclairage, le réfrigérateur, la pompe �
 25 W) qui permet un éclairage complet du plan de travail et de l'évier. Dans certains modèles (gamme SUPRA et MAXIMA) il est équipé en série d'une hotte électrique qui rejette vers l'extérieur les vapeurs de cuisson.  
 > Chaque circuit possède son interrupteur à voyant lumineux et est protégé par un fusible (voir tableau des fonctions en page 24 et schéma ci-contre).”
 
-![Schéma électrique de la caravane](/projects/Caravane/schéma_elec.jpeg)  
+![Schéma électrique de la caravane](/projects/Caravane/schema_elec.jpeg)
 *Schéma type d’implantation électrique (manuel utilisateur)*  
 
-![Schéma de principe du circuit électrique](/projects/Caravane/schéma_principe.jpeg)  
+![Schéma de principe du circuit électrique](/projects/Caravane/schema_principe.jpeg)
 *Schéma de principe du circuit électrique (manuel utilisateur)*  
 
 Problème : en achetant la caravane d’occasion, le **circuit 220 V avait déjà été supprimé** (plus de transfo, plus de frigo, plus de pompe, etc.).  
