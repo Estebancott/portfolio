@@ -2,7 +2,7 @@
 title: "Formule Polytechnique Montréal"
 date: "2024-12-15"
 cover: "/projects/FormulePolytechniqueMontreal/formule.gif"
-tags: ["STM32", "Embarqué", "CAN", "Python", "Xbee", "Télémétrie"]
+tags: ["STM32", "Embarqué", "C++", "CAN", "Python", "Xbee", "Télémétrie"]
 ---
 
 ## Mon Aventure à la Formule Polytechnique Montréal
