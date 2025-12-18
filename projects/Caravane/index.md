@@ -49,7 +49,7 @@ Avantage : il restait uniquement **les interrupteurs, relais et l’éclairage 1
 
 Pour la partie audio, j'ai voulu privilégier le réemploi. J'ai récupéré l'essentiel des composants (haut-parleurs, autoradio, câblage) sur une voiture destinée à la casse. Cela permet d'avoir des équipements nativement prévus pour le 12 V.
 
-![Composants audio de récupération](/projects/Caravane/composants.jpg)
+![Composants audio de récupération](/projects/Caravane/composants.jpeg)
 *Vue d'ensemble des composants récupérés pour la conception du système audio*
 
 J'ai sélectionné **6 haut-parleurs** pour répartir le son uniformément, ainsi qu'un autoradio classique. Pour obtenir un son plus propre, j'ai travaillé sur les filtres afin de bien séparer les basses, médiums et aigus.
@@ -64,7 +64,7 @@ L'un des défis était la gestion de la source d'énergie. L'alimentation peut p
 
 Pour gérer cela, il y a un **relais de commutation**.
 
-![Branchements électriques et relais](/projects/Caravane/branchements_autoradio.jpg)
+![Branchements électriques et relais](/projects/Caravane/branchements_autoradio.jpeg)
 *Câblage du système avec le relais de priorité*
 
 Ce relais permet de switcher automatiquement entre les deux sources : la **prise extérieure a la priorité**. Dès qu'elle est branchée, le relais coupe l'alimentation via la batterie pour la préserver. Si aucune prise n'est branchée, le système bascule naturellement sur la batterie.
@@ -77,7 +77,7 @@ J'ai également intégré un petit module de contrôle affichant la tension de l
 
 L'intégration a été pensée pour être la plus discrète possible. Les 6 haut-parleurs ont été incrustés directement dans les meubles existants.
 
-![Intégration gauche](/projects/Caravane/resultat_gauche.jpg)
+![Intégration gauche](/projects/Caravane/resultat_gauche.jpeg)
 *Côté gauche : Intégration des haut-parleurs dans les placards hauts*
 
 Sur la partie droite, on retrouve le "tableau de bord" incrusté dans le meuble :
@@ -85,7 +85,7 @@ Sur la partie droite, on retrouve le "tableau de bord" incrusté dans le meuble 
 - Le voltmètre (pour surveiller la batterie).
 - Le chargeur de téléphone avec enrouleurs de câbles intégrés.
 
-![Intégration droite](/projects/Caravane/resultat_droite.jpg)
+![Intégration droite](/projects/Caravane/resultat_droite.jpeg)
 *Côté droit : Autoradio, voltmètre et chargeurs intégrés au mobilier*
 
 Aujourd’hui, la caravane de 1989 est devenue un vrai **petit refuge moderne** :  
