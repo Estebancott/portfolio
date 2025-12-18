@@ -1,7 +1,7 @@
 ---
 title: "Rénovation et modernisation d’une caravane"
 date: "2025-07-03"
-cover: "/projects/Caravane/caravane.gif"
+cover: "/projects/Caravane/caravane_cover.gif"
 tags: ["DIY", "Électricité", "Audio", "Bricolage"]
 ---
 
