@@ -1,7 +1,7 @@
 ---
 title: "Rénovation et modernisation d’une caravane"
 date: "2025-07-03"
-cover: "/projects/Caravane/caravane.jpeg"
+cover: "/projects/Caravane/caravane.gif"
 tags: ["DIY", "Électricité", "Audio", "Bricolage"]
 ---
 
@@ -75,6 +75,10 @@ Enfin, un **panneau solaire** (avec contrôleur acheté sur AliExpress) permet d
 ---
 
 ## Résultat
+
+![Gif de l'intérieur de la caravane](/projects/Caravane/caravane.gif)
+*Gif de l'intérieur de la caravane*  
+
 Aujourd’hui, la caravane de 1989 est devenue un vrai **petit refuge moderne** :  
 - lumière intérieure alimentée en 12 V,  
 - musique en Bluetooth grâce à l’autoradio,  
