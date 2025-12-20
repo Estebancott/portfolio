@@ -6,14 +6,15 @@
   right: 0;
   top: 0;
   width: 100%;
-  height: 7rem;
+  // Hauteur un peu plus compacte pour mobile pour éviter l'effet "vide"
+  height: clamp(5rem, 12vh, 7.5rem); 
   background: transparent;
   display: flex;
-  border-bottom: 1px solid transparent;
   justify-content: center;
   align-items: center;
   z-index: 9;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 1px solid transparent;
 
   &.scrolled {
     position: fixed;
@@ -25,164 +26,154 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: clamp(95%, 92vw, 1600px); // On utilise 95% sur mobile pour gagner des pixels précieux
+    position: relative;
+    height: 100%;
 
+    // --- BLOC GAUCHE ---
+    .leftSection {
+      display: flex;
+      align-items: center;
+      // SUPPRESSION DE flex: 1; -> On laisse le contenu décider de la largeur
+      // Cela évite de réserver 50% de l'espace inutilement si le texte est court
+    }
+
+    // --- BLOC CENTRE (LOGO) ---
+    .logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      z-index: 10;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-height: 100%; 
+
+      svg {
+        // Ajustement pour être sûr que le logo ne gêne pas sur iPhone XR
+        width: clamp(3.5rem, 12vmin, 6rem);
+        height: clamp(3.5rem, 12vmin, 6rem);
+        max-height: 85%; 
+        width: auto;
+
+        path {
+          fill: black;
+          transition: fill 0.2s;
+        }
+      }
+
+      &.logoHovered svg path {
+        fill: vars.$primaryColor;
+      }
+    }
+
+    // --- BLOC DROITE ---
+    .rightSection {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      // SUPPRESSION DE flex: 1; -> La droite peut maintenant "manger" l'espace vide du milieu
+      // Cela empêche le bouton d'être écrasé par une fausse limite au centre
+      
+      // Espace un peu réduit pour assurer que tout rentre sur 414px (XR)
+      gap: clamp(0.5rem, 1.5vw, 1.5rem);
+      
+      .getInTouch {
+        width: auto;
+        // On réduit légèrement le min-width pour mobile pour éviter le débordement
+        min-width: clamp(6.5rem, 12vw, 10rem); 
+        height: clamp(2.5rem, 4vh, 3rem);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        // Empêche le bouton de rétrécir et casser l'alignement
+        flex-shrink: 0;
+        
+        a {
+            color: vars.$tertiaryColor;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+            // Fixe l'alignement vertical du texte dans le bouton
+            line-height: 1; 
+            display: block; 
+        }
+      }
+    }
+
+    // --- Styles communs aux menus ---
     nav {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      // Empêche le menu de se faire écraser
+      flex-shrink: 0;
 
       .menu {
         list-style: none;
         display: flex;
         justify-content: center;
+        align-items: center; // Assure l'alignement vertical parfait
         padding: 0;
-        position: relative;
         margin: 0;
-      }
-
-      .menu li {
-        padding: 0 10px;
         position: relative;
-      }
 
-      .menu li a {
-        text-decoration: none;
-        color: vars.$tertiaryColor;
-        position: relative;
-        font-size: 1.2rem;
-        font-weight: 500;
-        cursor: pointer;
-        display: inline-block;
-        transition: color 0.2s;
-      }
+        li {
+          // Padding sécurisé : minimum 5px pour éviter que Fr/En se collent
+          padding: 0 clamp(5px, 1.2vw, 12px);
+          position: relative;
+          display: flex; // Pour centrer le lien dans le li
+          align-items: center;
 
-      .border {
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        height: 2px;
-        background-color: vars.$primaryColor;
-        transition: transform 0.3s ease, width 0.3s ease;
-        z-index: 1;
-        width: 0;
-      }
+          a {
+            text-decoration: none;
+            color: vars.$tertiaryColor;
+            position: relative;
+            
+            // Taille de police ajustée
+            font-size: clamp(0.95rem, 2vw, 1.25rem);
+            
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-block;
+            transition: color 0.2s;
+            white-space: nowrap;
+            line-height: 1; // Évite les décalages verticaux invisibles
 
-      p {
-        color: black;
-        font-size: 1.2rem;
-        font-weight: 500;
-      }
-    }
+            &.active {
+              color: vars.$primaryColor;
+              font-weight: bold;
+            }
 
-    .logo {
-      cursor: pointer;
-      svg {
-        width: 5rem;
-        height: 5rem;
-        path{
-          fill: black;
-          transition: fill 0.2s;
+            &:hover {
+              color: vars.$primaryColor;
+            }
+          }
         }
-      }
-    }
-    .logoHovered{
-      svg{
-        path{
-          fill: vars.$primaryColor;
-        }
-      }
-    }
 
-    .getInTouch {
-      width: 10rem;
-      height: 3rem;
-      a{
-        color: vars.$tertiaryColor;
-        text-decoration: none;
+        .border {
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          height: 2px;
+          background-color: vars.$primaryColor;
+          transition: transform 0.3s ease, width 0.3s ease;
+          z-index: 1;
+          width: 0;
+        }
       }
     }
   }
 }
 
-// Responsive design
-@media (max-width: 1024px) {
-  .header {
-    .content {
-      width: 90%;
-      
-      nav {
-        .menu li a {
-          font-size: 1.1rem;
-        }
-      }
-      
-      .logo svg {
-        width: 4.5rem;
-        height: 4.5rem;
-      }
-      
-      .getInTouch {
-        width: 9rem;
-        height: 2.8rem;
-      }
+// Sécurité : si l'écran est vraiment minuscule (iPhone SE 1ere gen / Galaxy Fold)
+@media (max-width: 360px) {
+    .header .content .logo {
+        opacity: 0; // On cache le logo visuellement mais on garde la structure
+        pointer-events: none;
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    height: 6rem;
-    
-    .content {
-      width: 95%;
-      
-      nav {
-        .menu li a {
-          font-size: 1rem;
-        }
-      }
-      
-      .logo svg {
-        width: 4rem;
-        height: 4rem;
-      }
-      
-      .getInTouch {
-        width: 8rem;
-        height: 2.5rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
-    height: 5rem;
-    
-    .content {
-      width: 100%;
-      padding: 0 1rem;
-      
-      nav {
-        .menu li {
-          padding: 0 8px;
-        }
-        
-        .menu li a {
-          font-size: 0.9rem;
-        }
-      }
-      
-      .logo svg {
-        width: 3.5rem;
-        height: 3.5rem;
-      }
-      
-      .getInTouch {
-        width: 7rem;
-        height: 2.2rem;
-      }
-    }
-  }
 }
