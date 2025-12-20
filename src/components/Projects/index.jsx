@@ -1,10 +1,12 @@
 import styles from "./index.module.scss";
 import { useState, useEffect } from "react";
 import { getProjects } from "../../config/projects";
-import { useLanguage } from "../../context/LanguageContext"; // Import context
+import { useLanguage } from "../../context/LanguageContext"; 
 
 const Projects = () => {
-    const { language } = useLanguage(); // Récupérer la langue actuelle
+    // 1. On récupère 't' en plus de 'language'
+    const { language, t } = useLanguage(); 
+    
     const [projects, setProjects] = useState([]);
     const [selectedProject, setSelectedProject] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,7 +17,6 @@ const Projects = () => {
         const loadProjects = async () => {
             try {
                 setLoading(true);
-                // On passe la langue actuelle à la fonction de chargement
                 const projectsData = await getProjects(language);
                 setProjects(projectsData);
             } catch (error) {
@@ -57,9 +58,11 @@ const Projects = () => {
     if (loading) {
         return (
             <div className={styles.container} data-section="projects">
-                <h2 className={styles.title}>All projects</h2>
+                {/* 2. Utilisation de la traduction pour le titre */}
+                <h2 className={styles.title}>{t.allProjects}</h2>
                 <div className={styles.loading}>
-                    <p>Chargement des projets...</p>
+                    {/* 3. Utilisation de la traduction pour le chargement */}
+                    <p>{t.loadingProjects}</p>
                 </div>
             </div>
         );
@@ -67,7 +70,8 @@ const Projects = () => {
 
     return (
         <div className={styles.container} data-section="projects">
-            <h2 className={styles.title}>All projects</h2>
+            {/* 4. Utilisation de la traduction ici aussi */}
+            <h2 className={styles.title}>{t.allProjects}</h2>
 
             <div className={styles.projectsGrid}>
                 {projects.map((project) => (
