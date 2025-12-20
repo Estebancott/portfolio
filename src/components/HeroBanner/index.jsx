@@ -1,13 +1,17 @@
 import styles from "./index.module.scss";
+import { useLanguage } from "../../context/LanguageContext";
 
 const HeroBanner = () => {
+    const { t } = useLanguage();
+    
     return (
         <div className={styles.container}>
             <div className={styles.description}>
-                <p className={styles.title}>My name <br/> is <span>Esteban</span></p>
+                <p className={styles.title}>
+                    {t.heroTitlePart1} <br/> {t.heroTitlePart2} <span>Esteban</span>
+                </p>
                 <p className={styles.descriptionOfDescription}>
-                    I’m an Embedded Software Engineer passionate about low-level systems — from real-time code and
-                    electronics to 3D modeling. I love building complete embedded solutions, from idea to deployment.
+                    {t.heroDescription}
                 </p>
             </div>
             <div className={styles.containerSkills}>

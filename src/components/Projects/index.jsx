@@ -1,8 +1,10 @@
 import styles from "./index.module.scss";
 import { useState, useEffect } from "react";
 import { getProjects } from "../../config/projects";
+import { useLanguage } from "../../context/LanguageContext"; // Import context
 
 const Projects = () => {
+    const { language } = useLanguage(); // Récupérer la langue actuelle
     const [projects, setProjects] = useState([]);
     const [selectedProject, setSelectedProject] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,7 +15,8 @@ const Projects = () => {
         const loadProjects = async () => {
             try {
                 setLoading(true);
-                const projectsData = await getProjects();
+                // On passe la langue actuelle à la fonction de chargement
+                const projectsData = await getProjects(language);
                 setProjects(projectsData);
             } catch (error) {
                 console.error('Erreur lors du chargement des projets:', error);
@@ -22,7 +25,7 @@ const Projects = () => {
             }
         };
         loadProjects();
-    }, []);
+    }, [language]);
 
     useEffect(() => {
         if (isModalOpen) {

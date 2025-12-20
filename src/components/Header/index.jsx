@@ -60,7 +60,8 @@ const Header = () => {
                     <nav>
                         <ul className={styles.menu} ref={menuRef}>
                             <li>
-                                <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" 
+                                {/* LIEN CV DYNAMIQUE ICI */}
+                                <a href={t.cvFile} target="_blank" rel="noopener noreferrer" 
                                    onMouseOver={(e) => handleMouseOver(e, menuRef, borderRef)} 
                                    onMouseOut={() => handleMouseOut(borderRef)}>
                                    {t.about}
