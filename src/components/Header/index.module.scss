@@ -66,7 +66,7 @@
       }
 
       &.logoHovered svg path {
-        fill: vars.$primaryColor;
+        fill: vars.$secondaryColor;
       }
     }
 
@@ -145,12 +145,12 @@
             line-height: 1; // Évite les décalages verticaux invisibles
 
             &.active {
-              color: vars.$primaryColor;
+              color: vars.$secondaryColor;
               font-weight: bold;
             }
 
             &:hover {
-              color: vars.$primaryColor;
+              color: vars.$secondaryColor;
             }
           }
         }
